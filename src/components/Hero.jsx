@@ -6,15 +6,14 @@ import {
   Sparkles,
   ArrowRight,
   ShieldCheck,
-  Zap,
   Flame,
   ShoppingBag,
   Eye,
-  Cpu,
-  Layers,
   CheckCircle2,
   ChevronRight,
-  Star
+  Star,
+  Cpu,
+  Layers
 } from 'lucide-react';
 
 const HERO_SHOWCASE = [
@@ -125,7 +124,7 @@ export default function Hero() {
     const element = document.getElementById('catalog-section');
     if (element) {
       if (window.lenis) {
-        window.lenis.scrollTo(element, { offset: -80 });
+        window.lenis.scrollTo(element, { offset: -90 });
       } else {
         element.scrollIntoView({ behavior: 'smooth' });
       }
@@ -136,7 +135,7 @@ export default function Hero() {
     const element = document.getElementById('promo-section');
     if (element) {
       if (window.lenis) {
-        window.lenis.scrollTo(element, { offset: -80 });
+        window.lenis.scrollTo(element, { offset: -90 });
       } else {
         element.scrollIntoView({ behavior: 'smooth' });
       }
@@ -146,13 +145,13 @@ export default function Hero() {
   return (
     <section
       id="hero-section"
-      className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-tech-grid"
+      className="relative pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden bg-tech-grid"
     >
       {/* Dynamic Ambient Glow Behind Hero */}
       <div
         ref={ambientGlowRef}
         style={{
-          background: `radial-gradient(circle at 50% 40%, ${activeProduct.glowColor} 0%, rgba(8,9,13,0) 65%)`
+          background: `radial-gradient(circle at 50% 35%, ${activeProduct.glowColor} 0%, rgba(8,9,13,0) 65%)`
         }}
         className="absolute inset-0 pointer-events-none transition-colors duration-1000 -z-10"
       />
@@ -163,32 +162,32 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* ==============================================================
-            CENTERED & JUSTIFIED HERO HEADLINE & MANIFESTO
+            CENTERED & JUSTIFIED HERO HEADLINE & ACTIONS (ABOVE THE FOLD)
         ============================================================== */}
         <div className="text-center max-w-4xl mx-auto flex flex-col items-center justify-center">
           
           {/* Top Tech Badge */}
           <motion.div
-            initial={{ opacity: 0, y: -15 }}
+            initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/10 backdrop-blur-xl mb-6 shadow-lg shadow-cyan-500/5"
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.05] border border-white/10 backdrop-blur-xl mb-3.5 shadow-md shadow-cyan-500/5"
           >
-            <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping" />
-            <span className="text-[11px] font-semibold tracking-widest uppercase text-slate-300">
+            <span className="flex h-1.5 w-1.5 rounded-full bg-cyan-400 animate-ping" />
+            <span className="text-[10px] font-semibold tracking-widest uppercase text-slate-300">
               ACCESS 2026 ARCHITECTURE • NEXT-GEN HARDWARE SHOWCASE
             </span>
-            <span className="px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 text-[10px] font-bold">
+            <span className="px-1.5 py-0.2 rounded bg-cyan-500/20 text-cyan-300 text-[9px] font-bold">
               VERIFIED
             </span>
           </motion.div>
 
-          {/* Centered Massive Typographic Headline */}
+          {/* Centered Headline - Crisp & Balanced for all viewports */}
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08] text-center"
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-white leading-[1.1] text-center"
           >
             Engineered Beyond Tomorrow.
             <br />
@@ -197,96 +196,96 @@ export default function Hero() {
             </span>
           </motion.h1>
 
-          {/* Centered Justified Tech Description */}
+          {/* Centered Justified Description */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-6 text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl text-center leading-relaxed font-light"
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="mt-3.5 text-xs sm:text-sm md:text-base text-slate-300 max-w-2xl text-center leading-relaxed font-light"
           >
-            The definitive nexus of computational supremacy, titanium mobile engineering, studio acoustic isolation, and cinema-grade OLED optics. Meticulously inspected, factory-sealed, and delivered at warp speed with concierge warranties.
+            The definitive nexus of computational supremacy, titanium mobile engineering, studio acoustic isolation, and cinema-grade OLED optics. Certified genuine and delivered in lightning speed.
           </motion.p>
 
-          {/* Centered Dual CTAs */}
+          {/* Centered Dual CTAs - ALWAYS PROMINENTLY VISIBLE IN THE VIEWPORT */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="mt-8 flex flex-wrap items-center justify-center gap-4"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-5 flex flex-wrap items-center justify-center gap-3.5"
           >
             <button
               onClick={() => scrollToCatalog('All')}
-              className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white font-bold text-sm tracking-wide shadow-[0_0_35px_rgba(56,189,248,0.4)] hover:shadow-[0_0_50px_rgba(56,189,248,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-3 overflow-hidden"
+              className="group relative px-7 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white font-bold text-xs tracking-wider uppercase shadow-[0_0_25px_rgba(56,189,248,0.4)] hover:shadow-[0_0_40px_rgba(56,189,248,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2.5 overflow-hidden"
             >
               <span className="relative z-10">Explore 2026 Flagships</span>
-              <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={15} className="relative z-10 group-hover:translate-x-1 transition-transform" />
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
             </button>
 
             <button
               onClick={scrollToOffers}
-              className="px-7 py-4 rounded-full bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:border-amber-400/40 text-slate-200 hover:text-white font-semibold text-sm tracking-wide transition-all flex items-center gap-2.5 backdrop-blur-xl group"
+              className="px-6 py-3 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:border-amber-400/50 text-slate-200 hover:text-white font-semibold text-xs tracking-wider uppercase transition-all flex items-center gap-2 backdrop-blur-xl group"
             >
-              <Flame size={16} className="text-amber-400 group-hover:scale-110 transition-transform" />
+              <Flame size={15} className="text-amber-400 group-hover:scale-110 transition-transform" />
               <span>Unlock Vault Deals</span>
-              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300">
+              <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-amber-400/20 text-amber-300">
                 -40% OFF
               </span>
             </button>
           </motion.div>
 
-          {/* Centered Micro-Features Bar */}
+          {/* Centered Micro-Features */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className="mt-8 flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-xs text-slate-400 font-medium"
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="mt-4 flex flex-wrap items-center justify-center gap-y-1 gap-x-5 text-[11px] text-slate-400 font-medium"
           >
             <div className="flex items-center gap-1.5">
-              <CheckCircle2 size={14} className="text-cyan-400" />
+              <CheckCircle2 size={13} className="text-cyan-400" />
               <span>Same-Day Priority Dispatch</span>
             </div>
             <span className="hidden sm:inline text-white/20">•</span>
             <div className="flex items-center gap-1.5">
-              <ShieldCheck size={14} className="text-indigo-400" />
+              <ShieldCheck size={13} className="text-indigo-400" />
               <span>2-Year Full Brand Warranty</span>
             </div>
             <span className="hidden sm:inline text-white/20">•</span>
             <div className="flex items-center gap-1.5">
-              <Star size={14} className="text-amber-400 fill-amber-400" />
-              <span>4.9/5 Rating (12,400+ Verified Owners)</span>
+              <Star size={13} className="text-amber-400 fill-amber-400" />
+              <span>4.9/5 Rating (12,400+ Verified)</span>
             </div>
           </motion.div>
         </div>
 
         {/* ==============================================================
-            CENTERED 10/10 INTERACTIVE 3D PRODUCT SHOWCASE CAROUSEL
+            INTERACTIVE 3D PRODUCT SHOWCASE CAROUSEL
         ============================================================== */}
-        <div className="mt-14 max-w-5xl mx-auto">
+        <div className="mt-8 max-w-5xl mx-auto">
           
           {/* Flagship Selector Tabs */}
-          <div className="flex items-center justify-center gap-2 mb-6 overflow-x-auto pb-2 scrollbar-none">
+          <div className="flex items-center justify-center gap-2 mb-4 overflow-x-auto pb-1 scrollbar-none">
             {HERO_SHOWCASE.map((item, index) => {
               const isCurrent = index === activeIndex;
               return (
                 <button
                   key={item.id}
                   onClick={() => setActiveIndex(index)}
-                  className={`relative px-4 py-2 rounded-full text-xs font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
+                  className={`relative px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all whitespace-nowrap flex items-center gap-2 ${
                     isCurrent
-                      ? 'text-white bg-white/10 border border-white/20 shadow-lg'
+                      ? 'text-white bg-white/10 border border-white/20 shadow-md'
                       : 'text-slate-400 hover:text-slate-200 bg-white/[0.02] border border-white/5 hover:bg-white/[0.05]'
                   }`}
                 >
                   <span
-                    className="w-2 h-2 rounded-full"
+                    className="w-1.5 h-1.5 rounded-full"
                     style={{ backgroundColor: item.colorHex }}
                   />
                   <span>{item.name}</span>
                   {isCurrent && (
                     <motion.div
                       layoutId="heroTabIndicator"
-                      className="absolute inset-0 rounded-full border border-cyan-400/60 pointer-events-none"
+                      className="absolute inset-0 rounded-lg border border-cyan-400/60 pointer-events-none"
                       transition={{ type: 'spring', stiffness: 350, damping: 30 }}
                     />
                   )}
@@ -296,12 +295,12 @@ export default function Hero() {
           </div>
 
           {/* Main Stage Display Card */}
-          <div className="relative rounded-3xl bg-gradient-to-b from-[#141622]/90 to-[#0d0e15]/95 border border-white/10 p-6 sm:p-10 backdrop-blur-2xl shadow-[0_30px_100px_rgba(0,0,0,0.8)] overflow-hidden">
+          <div className="relative rounded-3xl bg-gradient-to-b from-[#141622]/90 to-[#0d0e15]/95 border border-white/10 p-5 sm:p-8 backdrop-blur-2xl shadow-[0_30px_100px_rgba(0,0,0,0.8)] overflow-hidden">
             
             {/* Top Bar of Stage */}
-            <div className="flex items-center justify-between border-b border-white/10 pb-5 mb-8">
-              <div className="flex items-center gap-3">
-                <span className="px-3 py-1 rounded-full text-[11px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+            <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+              <div className="flex items-center gap-2.5">
+                <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 uppercase tracking-wider">
                   {activeProduct.badge}
                 </span>
                 <span className="text-xs text-slate-400 font-medium">
@@ -309,48 +308,46 @@ export default function Hero() {
                 </span>
               </div>
 
-              <div className="flex items-center gap-3">
-                <div className="text-right">
-                  <span className="text-2xl sm:text-3xl font-extrabold text-white font-mono">
-                    ${activeProduct.price.toLocaleString()}
-                  </span>
-                  <span className="ml-2 text-xs text-slate-500 line-through">
-                    ${activeProduct.originalPrice.toLocaleString()}
-                  </span>
-                </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xl sm:text-2xl font-extrabold text-white font-mono">
+                  ${activeProduct.price.toLocaleString()}
+                </span>
+                <span className="text-xs text-slate-500 line-through">
+                  ${activeProduct.originalPrice.toLocaleString()}
+                </span>
               </div>
             </div>
 
-            {/* Centered Showcase Stage */}
-            <div className="relative flex flex-col lg:flex-row items-center justify-between gap-10">
+            {/* Showcase Stage Grid */}
+            <div className="relative flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8">
               
               {/* Left Column: Key Highlights & Live Specs */}
-              <div className="w-full lg:w-1/3 space-y-4 text-center lg:text-left order-2 lg:order-1">
+              <div className="w-full lg:w-1/3 space-y-3.5 text-center lg:text-left order-2 lg:order-1">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeProduct.id + '-info'}
-                    initial={{ opacity: 0, x: -20 }}
+                    initial={{ opacity: 0, x: -15 }}
                     animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
-                    transition={{ duration: 0.3 }}
-                    className="space-y-4"
+                    exit={{ opacity: 0, x: -15 }}
+                    transition={{ duration: 0.25 }}
+                    className="space-y-3"
                   >
                     <div>
-                      <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
+                      <h3 className="text-xl sm:text-2xl font-extrabold text-white">
                         {activeProduct.name}
                       </h3>
-                      <p className="text-sm text-cyan-400 mt-1 font-medium">
+                      <p className="text-xs sm:text-sm text-cyan-400 mt-0.5 font-medium">
                         {activeProduct.tagline}
                       </p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2.5 pt-2">
+                    <div className="grid grid-cols-2 gap-2 pt-1">
                       {activeProduct.specs.map((spec, i) => (
                         <div
                           key={i}
-                          className="p-3 rounded-xl bg-white/[0.04] border border-white/[0.06] backdrop-blur"
+                          className="p-2.5 rounded-lg bg-white/[0.04] border border-white/[0.06] backdrop-blur"
                         >
-                          <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
+                          <div className="text-[9px] uppercase font-bold text-slate-400 tracking-wider">
                             {spec.label}
                           </div>
                           <div className="text-xs font-semibold text-slate-100 mt-0.5 truncate">
@@ -360,21 +357,21 @@ export default function Hero() {
                       ))}
                     </div>
 
-                    <div className="flex items-center justify-center lg:justify-start gap-3 pt-2">
+                    <div className="flex items-center justify-center lg:justify-start gap-2.5 pt-2">
                       <button
                         onClick={() => addToCart(activeProduct)}
-                        className="px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-lg shadow-cyan-500/30 transition-all active:scale-95"
+                        className="px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow-md shadow-cyan-500/30 transition-all active:scale-95"
                       >
-                        <ShoppingBag size={15} />
+                        <ShoppingBag size={14} />
                         <span>Add To Vault</span>
                       </button>
 
                       <button
                         onClick={() => openQuickView(activeProduct)}
-                        className="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium text-xs flex items-center gap-2 border border-white/10 transition-colors"
+                        className="px-3.5 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white font-medium text-xs flex items-center gap-1.5 border border-white/10 transition-colors"
                       >
-                        <Eye size={15} />
-                        <span>Deep Specs</span>
+                        <Eye size={14} />
+                        <span>Inspect</span>
                       </button>
                     </div>
                   </motion.div>
@@ -386,43 +383,43 @@ export default function Hero() {
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeProduct.id + '-image'}
-                    initial={{ opacity: 0, scale: 0.9, y: 15 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                    exit={{ opacity: 0, scale: 0.9, y: -15 }}
-                    transition={{ duration: 0.4 }}
-                    className="relative group w-full max-w-md h-72 sm:h-96 flex items-center justify-center"
+                    initial={{ opacity: 0, scale: 0.92 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.92 }}
+                    transition={{ duration: 0.35 }}
+                    className="relative group w-full max-w-md h-64 sm:h-80 flex items-center justify-center"
                   >
                     {/* Glowing Backlight Disc */}
                     <div
                       style={{
                         background: `radial-gradient(circle, ${activeProduct.colorHex}55 0%, rgba(0,0,0,0) 70%)`
                       }}
-                      className="absolute inset-0 w-full h-full rounded-full blur-3xl -z-10 animate-pulse-slow"
+                      className="absolute inset-0 w-full h-full rounded-full blur-2xl -z-10 animate-pulse-slow"
                     />
 
                     {/* Centered High-Resolution Hardware Image */}
                     <img
                       src={activeProduct.image}
                       alt={activeProduct.name}
-                      className="max-h-72 sm:max-h-88 w-auto object-contain drop-shadow-[0_25px_35px_rgba(0,0,0,0.8)] transition-transform duration-700 group-hover:scale-105"
+                      className="max-h-60 sm:max-h-72 w-auto object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transition-transform duration-500 group-hover:scale-105"
                     />
 
                     {/* Floating Telemetry Callout Pills */}
-                    <div className="hidden sm:block absolute top-4 right-0 p-2.5 rounded-2xl bg-[#0b0c12]/80 backdrop-blur-xl border border-white/10 shadow-xl text-left animate-float">
-                      <div className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
+                    <div className="hidden sm:block absolute top-2 right-0 p-2 rounded-xl bg-[#0b0c12]/85 backdrop-blur-xl border border-white/10 shadow-lg text-left">
+                      <div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">
                         STATUS
                       </div>
-                      <div className="text-xs font-semibold text-emerald-400 flex items-center gap-1 mt-0.5">
+                      <div className="text-[11px] font-semibold text-emerald-400 flex items-center gap-1 mt-0.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
                         Certified In Stock
                       </div>
                     </div>
 
-                    <div className="hidden sm:block absolute bottom-4 left-0 p-2.5 rounded-2xl bg-[#0b0c12]/80 backdrop-blur-xl border border-white/10 shadow-xl text-left">
-                      <div className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
+                    <div className="hidden sm:block absolute bottom-2 left-0 p-2 rounded-xl bg-[#0b0c12]/85 backdrop-blur-xl border border-white/10 shadow-lg text-left">
+                      <div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">
                         AIR DISPATCH
                       </div>
-                      <div className="text-xs font-semibold text-cyan-300 mt-0.5">
+                      <div className="text-[11px] font-semibold text-cyan-300 mt-0.5">
                         Free Express Air
                       </div>
                     </div>
@@ -433,10 +430,10 @@ export default function Hero() {
             </div>
 
             {/* Bottom Progress Bar Indicator for auto-rotation */}
-            <div className="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+            <div className="mt-6 pt-3 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
               <div className="flex items-center gap-2">
-                <span>0{activeIndex + 1}</span>
-                <div className="w-24 h-1 bg-white/10 rounded-full overflow-hidden">
+                <span className="font-mono text-[11px]">0{activeIndex + 1}</span>
+                <div className="w-20 h-1 bg-white/10 rounded-full overflow-hidden">
                   <motion.div
                     key={activeIndex}
                     initial={{ width: '0%' }}
@@ -445,29 +442,29 @@ export default function Hero() {
                     className="h-full bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full"
                   />
                 </div>
-                <span>0{HERO_SHOWCASE.length}</span>
+                <span className="font-mono text-[11px]">0{HERO_SHOWCASE.length}</span>
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5">
                 <button
                   onClick={() =>
                     setActiveIndex(
                       (prev) => (prev - 1 + HERO_SHOWCASE.length) % HERO_SHOWCASE.length
                     )
                   }
-                  className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white"
+                  className="p-1 rounded bg-white/5 hover:bg-white/10 text-white"
                   title="Previous flagship"
                 >
-                  <ChevronRight size={14} className="rotate-180" />
+                  <ChevronRight size={13} className="rotate-180" />
                 </button>
                 <button
                   onClick={() =>
                     setActiveIndex((prev) => (prev + 1) % HERO_SHOWCASE.length)
                   }
-                  className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white"
+                  className="p-1 rounded bg-white/5 hover:bg-white/10 text-white"
                   title="Next flagship"
                 >
-                  <ChevronRight size={14} />
+                  <ChevronRight size={13} />
                 </button>
               </div>
             </div>
