@@ -7,7 +7,7 @@ export default function ToastContainer() {
   const { toasts, removeToast } = useCart();
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none max-w-sm w-full">
+    <div className="fixed bottom-20 right-6 z-50 flex flex-col gap-2 pointer-events-none max-w-sm w-full">
       <AnimatePresence>
         {toasts.map((toast) => (
           <motion.div
