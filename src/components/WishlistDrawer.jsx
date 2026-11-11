@@ -5,10 +5,7 @@ import productsData from '../data/products.json';
 import {
   X,
   Heart,
-  ShoppingBag,
-  Trash2,
-  ArrowRight,
-  Star
+  ShoppingBag
 } from 'lucide-react';
 
 export default function WishlistDrawer() {
@@ -17,8 +14,7 @@ export default function WishlistDrawer() {
     setIsWishlistOpen,
     wishlist,
     toggleWishlist,
-    addToCart,
-    openQuickView
+    addToCart
   } = useCart();
 
   if (!isWishlistOpen) return null;
@@ -28,69 +24,62 @@ export default function WishlistDrawer() {
   return (
     <AnimatePresence>
       <div className="fixed inset-0 z-50 flex justify-end">
-        {/* Backdrop */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsWishlistOpen(false)}
-          className="fixed inset-0 bg-black/80 backdrop-blur-md"
+          className="fixed inset-0 bg-black/85 backdrop-blur-sm"
         />
 
-        {/* Drawer Panel */}
         <motion.div
           initial={{ x: '100%' }}
           animate={{ x: 0 }}
           exit={{ x: '100%' }}
           transition={{ type: 'spring', damping: 28, stiffness: 260 }}
-          className="relative w-full max-w-md bg-[#0f111a] border-l border-white/10 shadow-2xl flex flex-col h-full z-10"
+          className="relative w-full max-w-md bg-[#0a0a0a] border-l border-[#f5f2eb]/15 shadow-2xl flex flex-col h-full z-10"
         >
           {/* Header */}
-          <div className="flex items-center justify-between p-5 border-b border-white/10 bg-[#131622]">
-            <div className="flex items-center gap-2.5">
-              <div className="p-2 rounded-xl bg-rose-500/15 text-rose-400">
-                <Heart size={18} className="fill-rose-500/40" />
-              </div>
+          <div className="flex items-center justify-between p-6 border-b border-[#f5f2eb]/10 bg-[#0e0e0e]">
+            <div className="flex items-center gap-3">
+              <Heart size={18} className="text-[#f5f2eb]" />
               <div>
-                <h2 className="text-base font-bold text-white">Curated Wishlist</h2>
-                <p className="text-xs text-slate-400">
-                  {wishlist.length} saved {wishlist.length === 1 ? 'flagship' : 'flagships'}
+                <h2 className="text-sm font-bold uppercase tracking-wider text-[#f5f2eb]">
+                  Curated Wishlist
+                </h2>
+                <p className="text-xs text-[#9c978b]">
+                  {wishlist.length} saved models
                 </p>
               </div>
             </div>
 
             <button
               onClick={() => setIsWishlistOpen(false)}
-              className="p-1.5 rounded-full bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white"
+              className="text-[#9c978b] hover:text-[#f5f2eb] p-1"
             >
               <X size={18} />
             </button>
           </div>
 
           {/* Items */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-3">
+          <div className="flex-1 overflow-y-auto p-6 space-y-4">
             {wishlistedProducts.length > 0 ? (
               wishlistedProducts.map((product) => (
                 <div
                   key={product.id}
-                  className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-white/15 flex items-center gap-3.5 transition-colors group"
+                  className="p-4 border border-[#f5f2eb]/10 bg-[#121212] flex items-center gap-4"
                 >
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-16 h-16 object-contain bg-black/40 rounded-xl p-1.5 border border-white/5 shrink-0"
+                    className="w-14 h-14 object-contain bg-[#080808] p-1 border border-[#f5f2eb]/10 shrink-0"
                   />
 
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-xs font-bold text-white truncate">
+                    <h3 className="text-xs font-bold text-[#f5f2eb] truncate">
                       {product.name}
                     </h3>
-                    <div className="flex items-center gap-1.5 text-[11px] text-amber-400 mt-0.5">
-                      <Star size={11} className="fill-amber-400" />
-                      <span className="text-white font-semibold">{product.rating}</span>
-                      <span className="text-slate-400">({product.reviewCount})</span>
-                    </div>
-                    <div className="text-xs font-extrabold text-cyan-400 font-mono mt-1">
+                    <div className="text-xs font-mono font-bold text-[#f5f2eb] mt-1">
                       ${product.price.toLocaleString()}
                     </div>
                   </div>
@@ -101,15 +90,14 @@ export default function WishlistDrawer() {
                         addToCart(product);
                         toggleWishlist(product);
                       }}
-                      className="px-3 py-1.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs flex items-center gap-1 shadow-md shadow-cyan-500/20"
-                      title="Move to Cart"
+                      className="px-3 py-1 bg-[#f5f2eb] hover:bg-white text-[#080808] font-bold text-[10px] uppercase flex items-center gap-1"
                     >
-                      <ShoppingBag size={12} />
+                      <ShoppingBag size={11} />
                       <span>Move</span>
                     </button>
                     <button
                       onClick={() => toggleWishlist(product)}
-                      className="text-slate-400 hover:text-rose-400 text-[11px] text-center"
+                      className="text-[10px] text-[#636058] hover:text-[#f5f2eb] uppercase tracking-wider"
                     >
                       Remove
                     </button>
@@ -117,13 +105,13 @@ export default function WishlistDrawer() {
                 </div>
               ))
             ) : (
-              <div className="py-20 text-center flex flex-col items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-500 mb-4">
-                  <Heart size={24} />
-                </div>
-                <p className="text-sm font-semibold text-white">No items in your wishlist</p>
-                <p className="text-xs text-slate-400 mt-1 max-w-xs">
-                  Tap the heart icon on any product in our catalog to save it for later comparison.
+              <div className="py-24 text-center">
+                <Heart size={24} className="mx-auto text-[#636058] mb-3" />
+                <p className="text-xs font-bold text-[#f5f2eb] uppercase tracking-wider">
+                  Wishlist is empty
+                </p>
+                <p className="text-xs text-[#9c978b] mt-1 font-light">
+                  Click the heart icon on any product to save it.
                 </p>
               </div>
             )}

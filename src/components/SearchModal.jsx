@@ -5,11 +5,7 @@ import productsData from '../data/products.json';
 import {
   Search,
   X,
-  ArrowRight,
-  Star,
-  ExternalLink,
-  ShoppingBag,
-  Sparkles
+  ShoppingBag
 } from 'lucide-react';
 
 export default function SearchModal() {
@@ -23,7 +19,6 @@ export default function SearchModal() {
 
   const [term, setTerm] = useState('');
 
-  // Keyboard shortcut listener for ⌘K / Ctrl+K and ESC
   useEffect(() => {
     const handleKeyDown = (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
@@ -62,7 +57,7 @@ export default function SearchModal() {
     const element = document.getElementById('catalog-section');
     if (element) {
       if (window.lenis) {
-        window.lenis.scrollTo(element, { offset: -80 });
+        window.lenis.scrollTo(element, { offset: -70 });
       } else {
         element.scrollIntoView({ behavior: 'smooth' });
       }
@@ -71,73 +66,68 @@ export default function SearchModal() {
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 px-4 sm:px-6">
-        {/* Backdrop */}
+      <div className="fixed inset-0 z-50 flex items-start justify-center pt-24 px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsSearchOpen(false)}
-          className="fixed inset-0 bg-black/80 backdrop-blur-md -z-10"
+          className="fixed inset-0 bg-black/85 backdrop-blur-sm -z-10"
         />
 
-        {/* Modal Window */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.96, y: -20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.96, y: -20 }}
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.96 }}
           transition={{ duration: 0.2 }}
-          className="w-full max-w-2xl bg-[#11131c] border border-white/10 rounded-3xl shadow-2xl overflow-hidden"
+          className="w-full max-w-2xl bg-[#0e0e0e] border border-[#f5f2eb]/20 shadow-2xl overflow-hidden"
         >
-          {/* Search Input Bar */}
-          <div className="p-4 sm:p-5 border-b border-white/10 flex items-center gap-3">
-            <Search size={20} className="text-cyan-400 shrink-0" />
+          {/* Bar */}
+          <div className="p-4 sm:p-5 border-b border-[#f5f2eb]/10 flex items-center gap-3 bg-[#121212]">
+            <Search size={18} className="text-[#f5f2eb] shrink-0" />
             <input
               type="text"
               autoFocus
               value={term}
               onChange={(e) => setTerm(e.target.value)}
-              placeholder="Search by model, department, silicon, or specs..."
-              className="w-full bg-transparent text-sm sm:text-base text-white placeholder:text-slate-500 focus:outline-none"
+              placeholder="Search by model, brand, or specifications..."
+              className="w-full bg-transparent text-sm text-[#f5f2eb] placeholder:text-[#636058] focus:outline-none"
             />
             {term && (
-              <button
-                onClick={() => setTerm('')}
-                className="p-1 rounded-full text-slate-400 hover:text-white"
-              >
-                <X size={16} />
+              <button onClick={() => setTerm('')} className="text-[#9c978b] hover:text-[#f5f2eb]">
+                <X size={15} />
               </button>
             )}
-            <kbd className="hidden sm:inline-block px-2 py-0.5 text-[10px] text-slate-400 bg-white/5 border border-white/10 rounded">
+            <kbd className="hidden sm:inline-block px-2 py-0.5 text-[9px] text-[#636058] border border-[#f5f2eb]/15">
               ESC
             </kbd>
           </div>
 
-          {/* Quick Categories Bar */}
-          <div className="px-5 py-2.5 bg-white/[0.02] border-b border-white/5 flex items-center gap-2 overflow-x-auto text-[11px] text-slate-400 scrollbar-none">
-            <span className="font-semibold text-slate-500 shrink-0">Jump to:</span>
+          {/* Quick Categories */}
+          <div className="px-5 py-2.5 bg-[#080808] border-b border-[#f5f2eb]/10 flex items-center gap-2 overflow-x-auto text-[11px] text-[#9c978b] scrollbar-none">
+            <span className="font-semibold text-[#636058] shrink-0 uppercase tracking-wider">Department:</span>
             {['Mobiles', 'Laptops', 'Headphones', 'Smart TVs', 'Cameras', 'Smartwatches'].map((c) => (
               <button
                 key={c}
                 onClick={() => handleCategoryShortcut(c)}
-                className="px-2.5 py-1 rounded-lg bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-300 transition-colors shrink-0"
+                className="px-2.5 py-0.5 border border-[#f5f2eb]/10 hover:border-[#f5f2eb]/40 text-[#9c978b] hover:text-[#f5f2eb] transition-colors shrink-0"
               >
                 {c}
               </button>
             ))}
           </div>
 
-          {/* Search Results / Suggestions */}
+          {/* Results */}
           <div className="p-4 max-h-96 overflow-y-auto space-y-2">
             {term.trim() === '' ? (
-              <div className="p-6 text-center text-xs text-slate-400">
-                <p className="font-semibold text-slate-300">Popular Searches Today</p>
+              <div className="p-8 text-center text-xs text-[#9c978b]">
+                <p className="font-semibold text-[#f5f2eb] uppercase tracking-wider">Suggested Searches</p>
                 <div className="flex flex-wrap justify-center gap-2 mt-3">
-                  {['iPhone 16 Pro Max', 'M4 Max', 'Sony WH-1000XM5', 'LG G4 OLED', 'Garmin Epix Pro', 'Anker 250W'].map((s) => (
+                  {['iPhone 16 Pro Max', 'M4 Max', 'Sony WH-1000XM5', 'LG G4 OLED', 'Garmin Epix Pro'].map((s) => (
                     <button
                       key={s}
                       onClick={() => setTerm(s)}
-                      className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-white transition-colors"
+                      className="px-3 py-1 bg-[#141414] border border-[#f5f2eb]/10 hover:border-[#f5f2eb]/30 text-[#f5f2eb] text-xs transition-colors"
                     >
                       {s}
                     </button>
@@ -149,31 +139,26 @@ export default function SearchModal() {
                 <div
                   key={product.id}
                   onClick={() => handleSelectProduct(product)}
-                  className="flex items-center justify-between p-3 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/5 transition-all cursor-pointer group"
+                  className="flex items-center justify-between p-3 border border-[#f5f2eb]/10 hover:border-[#f5f2eb]/30 bg-[#121212] transition-colors cursor-pointer"
                 >
                   <div className="flex items-center gap-3">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-12 h-12 object-contain bg-black/40 rounded-xl p-1 border border-white/5"
+                      className="w-12 h-12 object-contain bg-[#080808] p-1 border border-[#f5f2eb]/10"
                     />
                     <div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-xs font-bold text-white group-hover:text-cyan-400 transition-colors">
-                          {product.name}
-                        </span>
-                        <span className="text-[10px] font-mono text-slate-400 bg-white/5 px-1.5 py-0.5 rounded">
-                          {product.category}
-                        </span>
+                      <div className="text-xs font-bold text-[#f5f2eb]">
+                        {product.name}
                       </div>
-                      <p className="text-[11px] text-slate-400 mt-0.5 line-clamp-1">
+                      <p className="text-[10px] text-[#9c978b] line-clamp-1 mt-0.5">
                         {product.tagLine}
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 shrink-0">
-                    <span className="font-mono text-xs font-bold text-cyan-400">
+                  <div className="flex items-center gap-3">
+                    <span className="font-mono text-xs font-bold text-[#f5f2eb]">
                       ${product.price.toLocaleString()}
                     </span>
                     <button
@@ -181,7 +166,7 @@ export default function SearchModal() {
                         e.stopPropagation();
                         addToCart(product);
                       }}
-                      className="p-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition-colors"
+                      className="p-1.5 bg-[#f5f2eb] text-[#080808] hover:bg-white"
                       title="Add to Vault"
                     >
                       <ShoppingBag size={13} />
@@ -190,8 +175,8 @@ export default function SearchModal() {
                 </div>
               ))
             ) : (
-              <div className="p-8 text-center text-xs text-slate-400">
-                No electronics found matching "{term}". Try searching for Apple, Sony, or OLED.
+              <div className="p-8 text-center text-xs text-[#9c978b]">
+                No hardware found matching "{term}".
               </div>
             )}
           </div>

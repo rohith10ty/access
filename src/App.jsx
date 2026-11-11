@@ -20,31 +20,27 @@ export default function App() {
   return (
     <CartProvider>
       <SmoothScroll>
-        <div className="min-h-screen bg-[#08090d] text-slate-100 font-outfit selection:bg-cyan-500 selection:text-black overflow-x-hidden relative">
+        <div className="min-h-screen bg-[#080808] text-[#f5f2eb] font-outfit selection:bg-[#f5f2eb] selection:text-[#080808] overflow-x-hidden relative">
           
-          {/* Top Global Ambient Lights */}
-          <div className="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none -z-10" />
-          <div className="fixed top-1/3 right-1/4 w-[30rem] h-[30rem] bg-indigo-500/10 rounded-full blur-[160px] pointer-events-none -z-10" />
-
           {/* Navigation Bar */}
           <Navbar />
 
           {/* Main Website Flow */}
           <main>
-            {/* 10/10 Centered & Justified Hero Section */}
+            {/* Monumental Centered Hero */}
             <Hero />
 
-            {/* Value Trust Features Bar */}
-            <TrustFeatures />
+            {/* Hardware Catalog & Filtering */}
+            <ProductListings />
 
-            {/* Special Offers & Promotional Drops */}
-            <PromoBanners />
-
-            {/* Curated Categories Grid */}
+            {/* Curated Categories */}
             <CategoriesSection />
 
-            {/* Product Catalog & Search & Filters */}
-            <ProductListings />
+            {/* Special Releases & Promo Banners */}
+            <PromoBanners />
+
+            {/* Quality & Delivery Assurance */}
+            <TrustFeatures />
 
             {/* Concierge & FAQ Accordion */}
             <FaqSection />
@@ -53,7 +49,7 @@ export default function App() {
           {/* Footer */}
           <Footer />
 
-          {/* Floating Modals and Drawers */}
+          {/* Modals and Drawers */}
           <CartDrawer />
           <WishlistDrawer />
           <SearchModal />

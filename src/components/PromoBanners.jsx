@@ -2,22 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useCart } from '../context/CartContext';
 import {
-  Sparkles,
-  ArrowRight,
   Clock,
   Tag,
   Copy,
   Check,
-  Zap,
-  Percent,
-  Gift
+  ArrowRight
 } from 'lucide-react';
 
 export default function PromoBanners() {
   const { applyCoupon, setActiveCategory } = useCart();
   const [copiedCode, setCopiedCode] = useState('');
 
-  // Live countdown timer state (e.g. 14h 28m 42s)
   const [timeLeft, setTimeLeft] = useState({
     hours: 14,
     minutes: 38,
@@ -48,7 +43,7 @@ export default function PromoBanners() {
     const element = document.getElementById('catalog-section');
     if (element) {
       if (window.lenis) {
-        window.lenis.scrollTo(element, { offset: -80 });
+        window.lenis.scrollTo(element, { offset: -70 });
       } else {
         element.scrollIntoView({ behavior: 'smooth' });
       }
@@ -56,167 +51,129 @@ export default function PromoBanners() {
   };
 
   return (
-    <section id="promo-section" className="py-20 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="promo-section" className="py-24 border-t border-[#f5f2eb]/10 bg-[#080808]">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/20 text-amber-300 text-xs font-semibold mb-3">
-              <Sparkles size={13} className="text-amber-400" />
-              <span>LIMITED ACCESS ARCHIVE</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Exclusive Hardware Drops & Promos
+            <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-[#9c978b]">
+              ARCHIVE PROMOTIONS
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#f5f2eb] tracking-tight mt-2">
+              Curated Releases & Vault Codes
             </h2>
-            <p className="text-sm text-slate-400 mt-2 max-w-xl">
-              Strictly limited allocation for verified members. Claim instant tier credits, zero-interest financing, and factory bundle kits.
+            <p className="text-sm text-[#9c978b] mt-2 max-w-xl font-light">
+              Limited inventory tiers allocated for verified members. Claim immediate savings across flagship mobile, computing, and acoustic systems.
             </p>
           </div>
 
-          {/* Flash Clock */}
-          <div className="flex items-center gap-3 p-3 rounded-2xl bg-[#141622] border border-white/10 shrink-0">
-            <Clock size={18} className="text-cyan-400" />
-            <div className="text-xs font-medium text-slate-300">
-              Vault Closes In:
+          {/* Flash Clock in Cream & Black */}
+          <div className="flex items-center gap-3 py-2 px-4 border border-[#f5f2eb]/15 bg-[#101010] shrink-0">
+            <Clock size={15} className="text-[#f5f2eb]" />
+            <div className="text-xs text-[#9c978b] uppercase tracking-wider">
+              Allocation Closes:
             </div>
-            <div className="flex items-center gap-1 font-mono font-bold text-sm text-white">
-              <span className="p-1 rounded bg-white/10">{String(timeLeft.hours).padStart(2, '0')}h</span>
+            <div className="flex items-center gap-1 font-mono font-bold text-xs text-[#f5f2eb]">
+              <span>{String(timeLeft.hours).padStart(2, '0')}h</span>
               <span>:</span>
-              <span className="p-1 rounded bg-white/10">{String(timeLeft.minutes).padStart(2, '0')}m</span>
+              <span>{String(timeLeft.minutes).padStart(2, '0')}m</span>
               <span>:</span>
-              <span className="p-1 rounded bg-white/10 text-cyan-400">{String(timeLeft.seconds).padStart(2, '0')}s</span>
+              <span>{String(timeLeft.seconds).padStart(2, '0')}s</span>
             </div>
           </div>
         </div>
 
-        {/* 3 Prominent Featured Banners */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* 2 Clean Architectural Cards in Cream & Black */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           
-          {/* Card 1: Main Hero Banner (Large) */}
-          <motion.div
-            whileHover={{ y: -5 }}
-            transition={{ duration: 0.3 }}
-            className="lg:col-span-2 relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#131b2e] via-[#0f1422] to-[#090b12] border border-cyan-500/30 p-8 sm:p-10 flex flex-col justify-between shadow-2xl group"
-          >
-            {/* Background Glow */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-cyan-500/20 transition-all duration-700" />
-            
-            <div className="relative z-10 flex flex-col sm:flex-row justify-between items-start gap-6">
-              <div className="max-w-md">
-                <span className="px-3 py-1 rounded-full bg-cyan-400/20 text-cyan-300 text-[11px] font-bold uppercase tracking-wider border border-cyan-400/30">
-                  FLAGSHIP SEASON PASS
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-white mt-4 leading-tight">
-                  Titanium Mobile & Ultra Audio Bundle
-                </h3>
-                <p className="text-slate-300 text-sm mt-3 leading-relaxed">
-                  Unlock an instant 15% markdown across all iPhone 16 Pro Max and Sony WH-1000XM5 orders with our launch voucher. Includes complimentary ACCESS Express Courier.
-                </p>
-
-                {/* Promo Code Pill */}
-                <div className="mt-6 inline-flex items-center gap-3 p-1.5 pl-4 rounded-xl bg-black/40 border border-white/15">
-                  <div className="flex items-center gap-2">
-                    <Tag size={14} className="text-cyan-400" />
-                    <span className="font-mono text-xs font-bold text-white tracking-wider">
-                      ACCESS2026
-                    </span>
-                  </div>
-                  <button
-                    onClick={() => handleCopy('ACCESS2026')}
-                    className="px-3 py-1.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 transition-colors"
-                  >
-                    {copiedCode === 'ACCESS2026' ? (
-                      <>
-                        <Check size={13} />
-                        <span>Copied & Applied!</span>
-                      </>
-                    ) : (
-                      <>
-                        <Copy size={13} />
-                        <span>Apply -15%</span>
-                      </>
-                    )}
-                  </button>
-                </div>
-              </div>
-
-              {/* Product Badge Showcase */}
-              <div className="relative shrink-0 hidden sm:block">
-                <img
-                  src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=500&q=80"
-                  alt="Flagship"
-                  className="w-48 h-48 object-cover rounded-2xl border border-white/10 shadow-2xl group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute -bottom-3 -right-3 px-3 py-1 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-white font-mono font-extrabold text-xs shadow-lg">
-                  SAVE $180+
-                </div>
-              </div>
-            </div>
-
-            <div className="relative z-10 mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
-              <div className="flex items-center gap-2 text-xs text-slate-400">
-                <Zap size={14} className="text-cyan-400" />
-                <span>Expires at 6:00 PM • First 100 Redemptions Only</span>
-              </div>
-              <button
-                onClick={() => handleExplorePromo('Mobiles')}
-                className="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1.5 group-hover:translate-x-1 transition-all"
-              >
-                <span>Shop Eligible Mobiles & Audio</span>
-                <ArrowRight size={14} />
-              </button>
-            </div>
-          </motion.div>
-
-          {/* Card 2: Cinema & Workstation Drop */}
-          <motion.div
-            whileHover={{ y: -5 }}
-            transition={{ duration: 0.3 }}
-            className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#1f1624] via-[#14101e] to-[#0a0812] border border-purple-500/30 p-8 flex flex-col justify-between shadow-2xl group"
-          >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-purple-500/20 transition-all duration-700" />
-
+          {/* Card 1 */}
+          <div className="border border-[#f5f2eb]/15 bg-[#101010] p-8 sm:p-10 flex flex-col justify-between group hover:border-[#f5f2eb]/40 transition-colors">
             <div>
-              <span className="px-3 py-1 rounded-full bg-purple-400/20 text-purple-300 text-[11px] font-bold uppercase tracking-wider border border-purple-400/30">
-                ENTERTAINMENT SUITE
-              </span>
-              <h3 className="text-2xl font-extrabold text-white mt-4 leading-snug">
-                $600 Trade-In Credit on 8K & OLED evo Displays
+              <div className="flex items-center justify-between text-xs tracking-widest uppercase font-semibold text-[#9c978b]">
+                <span>FLAGSHIP PASS</span>
+                <span className="text-[#f5f2eb] font-mono">-15% DISCOUNT</span>
+              </div>
+
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#f5f2eb] mt-4 leading-tight">
+                Titanium Mobile & Studio Audio
               </h3>
-              <p className="text-slate-300 text-sm mt-3">
-                Upgrade any existing display or TV for an instant $600 appraisal credit towards the LG G4 OLED evo or Samsung Neo QLED 8K series.
+              <p className="text-sm text-[#9c978b] mt-3 font-light leading-relaxed">
+                Apply voucher <strong className="text-[#f5f2eb] font-mono">ACCESS2026</strong> for an instant 15% reduction across all iPhone 16 Pro Max, Pixel 9 Pro XL, and Sony WH-1000XM5 orders.
               </p>
             </div>
 
-            <div className="mt-8">
-              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between mb-4">
-                <div>
-                  <div className="text-[10px] text-slate-400 font-bold uppercase">
-                    PROMO CODE
-                  </div>
-                  <div className="font-mono text-xs font-bold text-purple-300">
-                    PRODIGY10
-                  </div>
-                </div>
-                <button
-                  onClick={() => handleCopy('PRODIGY10')}
-                  className="px-3 py-1.5 rounded-lg bg-purple-500 hover:bg-purple-400 text-white font-bold text-xs flex items-center gap-1 transition-colors"
-                >
-                  <Percent size={13} />
-                  <span>Get 10% Extra</span>
-                </button>
+            <div className="mt-8 pt-6 border-t border-[#f5f2eb]/10 flex flex-wrap items-center justify-between gap-4">
+              <button
+                onClick={() => handleCopy('ACCESS2026')}
+                className="px-5 py-2.5 bg-[#f5f2eb] hover:bg-white text-[#080808] font-bold text-xs uppercase tracking-wider flex items-center gap-2 transition-all"
+              >
+                {copiedCode === 'ACCESS2026' ? (
+                  <>
+                    <Check size={14} />
+                    <span>Applied to Vault</span>
+                  </>
+                ) : (
+                  <>
+                    <Tag size={14} />
+                    <span>Apply Code ACCESS2026</span>
+                  </>
+                )}
+              </button>
+
+              <button
+                onClick={() => handleExplorePromo('Mobiles')}
+                className="text-xs font-semibold text-[#f5f2eb] hover:text-white flex items-center gap-1.5 uppercase tracking-wider"
+              >
+                <span>Browse Eligible Gear</span>
+                <ArrowRight size={13} />
+              </button>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className="border border-[#f5f2eb]/15 bg-[#101010] p-8 sm:p-10 flex flex-col justify-between group hover:border-[#f5f2eb]/40 transition-colors">
+            <div>
+              <div className="flex items-center justify-between text-xs tracking-widest uppercase font-semibold text-[#9c978b]">
+                <span>CINEMA PURIST</span>
+                <span className="text-[#f5f2eb] font-mono">-10% DISCOUNT</span>
               </div>
+
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#f5f2eb] mt-4 leading-tight">
+                OLED evo & 8K Cinema Displays
+              </h3>
+              <p className="text-sm text-[#9c978b] mt-3 font-light leading-relaxed">
+                Apply voucher <strong className="text-[#f5f2eb] font-mono">PRODIGY10</strong> for a 10% credit across all LG OLED G4 and Samsung Neo QLED 8K flagship displays with free wall mounting.
+              </p>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-[#f5f2eb]/10 flex flex-wrap items-center justify-between gap-4">
+              <button
+                onClick={() => handleCopy('PRODIGY10')}
+                className="px-5 py-2.5 bg-[#f5f2eb] hover:bg-white text-[#080808] font-bold text-xs uppercase tracking-wider flex items-center gap-2 transition-all"
+              >
+                {copiedCode === 'PRODIGY10' ? (
+                  <>
+                    <Check size={14} />
+                    <span>Applied to Vault</span>
+                  </>
+                ) : (
+                  <>
+                    <Tag size={14} />
+                    <span>Apply Code PRODIGY10</span>
+                  </>
+                )}
+              </button>
 
               <button
                 onClick={() => handleExplorePromo('Smart TVs')}
-                className="w-full py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs flex items-center justify-center gap-2 border border-white/10 transition-colors"
+                className="text-xs font-semibold text-[#f5f2eb] hover:text-white flex items-center gap-1.5 uppercase tracking-wider"
               >
-                <span>Browse Smart TVs</span>
-                <ArrowRight size={14} />
+                <span>Browse Displays</span>
+                <ArrowRight size={13} />
               </button>
             </div>
-          </motion.div>
+          </div>
 
         </div>
 
