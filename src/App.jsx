@@ -15,6 +15,7 @@ import SearchModal from './components/SearchModal';
 import ProductDetailsModal from './components/ProductDetailsModal';
 import CheckoutModal from './components/CheckoutModal';
 import ToastContainer from './components/ToastContainer';
+import BackToTop from './components/BackToTop';
 
 export default function App() {
   return (
@@ -56,6 +57,7 @@ export default function App() {
           <ProductDetailsModal />
           <CheckoutModal />
           <ToastContainer />
+          <BackToTop />
         </div>
       </SmoothScroll>
     </CartProvider>
