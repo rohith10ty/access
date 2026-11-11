@@ -1,0 +1,1203 @@
+[
+  {
+    "id": "mob-01",
+    "name": "Apple iPhone 16 Pro Max",
+    "category": "Mobiles",
+    "brand": "Apple",
+    "price": 1199,
+    "originalPrice": 1299,
+    "discountPercentage": 8,
+    "rating": 4.9,
+    "reviewCount": 428,
+    "inStock": true,
+    "stockCount": 14,
+    "isFeatured": true,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Flagship 2026",
+    "tagLine": "Forged in Grade 5 Titanium with A18 Pro Bionic Architecture.",
+    "description": "The ultimate iPhone experience. Engineered with aerospace-grade Grade 5 titanium, the iPhone 16 Pro Max features a 6.9-inch Super Retina XDR display with ProMotion 120Hz, the breakthrough A18 Pro silicon for console-level hardware ray tracing, an ultra-advanced 48MP Fusion camera system with 5x optical telephoto, and unprecedented battery endurance.",
+    "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Desert Titanium", "hex": "#c4a589" },
+      { "name": "Natural Titanium", "hex": "#9e9b94" },
+      { "name": "Black Titanium", "hex": "#2e2e2e" },
+      { "name": "White Titanium", "hex": "#f2f2f2" }
+    ],
+    "specs": {
+      "Display": "6.9\" Super Retina XDR OLED 120Hz",
+      "Processor": "Apple A18 Pro 3nm 6-Core",
+      "Storage": "512GB NVMe High-Speed",
+      "Camera": "48MP Main + 48MP Ultra-Wide + 12MP 5x Telephoto",
+      "Battery": "Up to 33 hours video playback",
+      "OS": "iOS 18 with Apple Intelligence"
+    },
+    "features": [
+      "Aerospace-grade Grade 5 titanium design with contoured edges",
+      "Action button and dedicated haptic Camera Control slider",
+      "Apple Intelligence with private cloud compute generative tools",
+      "4K 120 fps Dolby Vision cinematic video recording"
+    ],
+    "warranty": "2-Year Official AppleCare+ & ACCESS Concierge Guarantee",
+    "inBox": "iPhone 16 Pro Max, USB-C Charge Cable (1m), Documentation"
+  },
+  {
+    "id": "mob-02",
+    "name": "Samsung Galaxy S25 Ultra",
+    "category": "Mobiles",
+    "brand": "Samsung",
+    "price": 1249,
+    "originalPrice": 1399,
+    "discountPercentage": 11,
+    "rating": 4.8,
+    "reviewCount": 312,
+    "inStock": true,
+    "stockCount": 9,
+    "isFeatured": true,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Galaxy AI",
+    "tagLine": "200MP Quad Telephoto & Embedded S-Pen Powerhouse.",
+    "description": "Meet the apex of Android engineering. The Galaxy S25 Ultra combines a flat titanium armor frame, anti-reflective Corning Gorilla Armor 2 display, Qualcomm Snapdragon 8 Elite overclocked processor, and the built-in S Pen stylus with pro-grade low latency.",
+    "image": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Titanium Gray", "hex": "#76797e" },
+      { "name": "Titanium Black", "hex": "#1b1c1e" },
+      { "name": "Titanium Violet", "hex": "#4e4963" }
+    ],
+    "specs": {
+      "Display": "6.8\" Dynamic AMOLED 2X QHD+ 1-120Hz 2600 nits",
+      "Processor": "Snapdragon 8 Elite Mobile Platform for Galaxy",
+      "Storage": "512GB UFS 4.0 Storage",
+      "Camera": "200MP Wide + 50MP 5x Periscope + 10MP 3x + 12MP Ultra-wide",
+      "Battery": "5000 mAh with 45W Fast Charging",
+      "Stylus": "Integrated Ultra-low Latency S-Pen"
+    },
+    "features": [
+      "Galaxy AI real-time call translation, Circle to Search, and Generative Photo Edit",
+      "Corning Gorilla Armor anti-reflective glass reduces 75% reflections",
+      "Titanium frame with IP68 dust and water resistance",
+      "ProVisual Engine for ultra-crisp nightography"
+    ],
+    "warranty": "2-Year Samsung Global Warranty",
+    "inBox": "Galaxy S25 Ultra, S-Pen, USB-C Data Cable, SIM Ejector"
+  },
+  {
+    "id": "mob-03",
+    "name": "Google Pixel 9 Pro XL",
+    "category": "Mobiles",
+    "brand": "Google",
+    "price": 1049,
+    "originalPrice": 1199,
+    "discountPercentage": 13,
+    "rating": 4.7,
+    "reviewCount": 195,
+    "inStock": true,
+    "stockCount": 18,
+    "isFeatured": false,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Gemini Pro Inside",
+    "tagLine": "The purest AI smartphone experience ever crafted.",
+    "description": "Google Pixel 9 Pro XL features a silky matte glass back and polished metal camera bar. Powered by Google Tensor G4 with 16GB RAM for on-device Gemini multimodal intelligence, delivering industry-leading computation photography and 7 years of OS updates.",
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Obsidian", "hex": "#25282a" },
+      { "name": "Porcelain", "hex": "#ece8e1" },
+      { "name": "Hazel", "hex": "#8d9489" }
+    ],
+    "specs": {
+      "Display": "6.8\" Super Actua LTPO OLED 1-120Hz 3000 nits",
+      "Processor": "Google Tensor G4 with Titan M2 security",
+      "Storage": "256GB High Speed NVMe",
+      "Camera": "50MP Octa PD Main + 48MP Quad PD 5x Telephoto + 48MP Ultrawide",
+      "RAM": "16GB LPDDR5X Dedicated for AI",
+      "OS": "Android 15 with 7 Years OS & Feature Drops"
+    },
+    "features": [
+      "Gemini Live built-in conversation assistant",
+      "Magic Editor with Reimagine photo background synthesis",
+      "Super Res Zoom up to 30x with AI detail recovery",
+      "Extreme Battery Saver provides up to 100 hours"
+    ],
+    "warranty": "2-Year Google Hardware Warranty",
+    "inBox": "Pixel 9 Pro XL, 1m USB-C to USB-C cable, Quick Switch Adapter"
+  },
+  {
+    "id": "mob-04",
+    "name": "Nothing Phone (2)",
+    "category": "Mobiles",
+    "brand": "Nothing",
+    "price": 599,
+    "originalPrice": 699,
+    "discountPercentage": 14,
+    "rating": 4.6,
+    "reviewCount": 154,
+    "inStock": true,
+    "stockCount": 22,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": true,
+    "badge": "Transparent Icon",
+    "tagLine": "Glyph Interface with striking transparent cyberpunk aesthetics.",
+    "description": "Nothing Phone (2) introduces a refined transparent glass rear with 33 addressable Glyph LED zones. Equipped with Snapdragon 8+ Gen 1, an LTPO OLED 120Hz display, and minimal Nothing OS 2.5.",
+    "image": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "White", "hex": "#f5f5f7" },
+      { "name": "Dark Gray", "hex": "#303030" }
+    ],
+    "specs": {
+      "Display": "6.7\" Flexible LTPO OLED 1-120Hz HDR10+",
+      "Processor": "Snapdragon 8+ Gen 1 4nm",
+      "Storage": "256GB UFS 3.1",
+      "Camera": "Dual 50MP Sony IMX890 OIS + 50MP Samsung JN1 Ultrawide",
+      "Lighting": "Glyph Interface with timer and progress indicators",
+      "Battery": "4700 mAh with 45W PPS fast charge"
+    },
+    "features": [
+      "Customizable Glyph composer ringtones and LED light sequences",
+      "Monochrome Nothing OS 2.5 interface eliminating phone distraction",
+      "Dual 50MP sensor cameras with 4K 60fps advanced HDR",
+      "100% recycled aluminum mid-frame"
+    ],
+    "warranty": "1-Year Nothing Manufacturer Warranty",
+    "inBox": "Nothing Phone (2), Nothing Cable (c-c), Screen Protector Pre-applied"
+  },
+
+  {
+    "id": "lap-01",
+    "name": "Apple MacBook Pro 16\" M4 Max",
+    "category": "Laptops",
+    "brand": "Apple",
+    "price": 3499,
+    "originalPrice": 3899,
+    "discountPercentage": 10,
+    "rating": 5.0,
+    "reviewCount": 284,
+    "inStock": true,
+    "stockCount": 6,
+    "isFeatured": true,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Pro Monster",
+    "tagLine": "Extreme 16-Core CPU & 40-Core GPU with 128GB Unified Memory.",
+    "description": "The peak of portable workstation performance. MacBook Pro 16\" with M4 Max delivers unbelievable computing throughput, 1600 nits peak Liquid Retina XDR display with nano-texture option, up to 24 hours of sustained battery life, and complete silent operation during 8K ProRes timelines.",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Space Black", "hex": "#1e2022" },
+      { "name": "Silver", "hex": "#e3e4e5" }
+    ],
+    "specs": {
+      "Display": "16.2\" Liquid Retina XDR 3456x2234 120Hz ProMotion",
+      "Processor": "Apple M4 Max (16-core CPU, 40-core GPU)",
+      "Memory": "64GB Unified High-Bandwidth Memory (546 GB/s)",
+      "Storage": "1TB Superfast PCIe SSD",
+      "Ports": "3x Thunderbolt 5, HDMI 2.1, SDXC slot, MagSafe 3",
+      "Battery": "100Wh Battery (up to 24 hours)"
+    },
+    "features": [
+      "Thunderbolt 5 ports supporting up to 120Gb/s transfer speed",
+      "Nano-texture anti-glare display option for outdoor color grading",
+      "Studio-quality three-mic array and six-speaker sound system with Spatial Audio",
+      "Breakthrough energy efficiency maintaining full power on battery"
+    ],
+    "warranty": "2-Year Apple Care Protection Included",
+    "inBox": "16-inch MacBook Pro, 140W USB-C Power Adapter, USB-C to MagSafe 3 Cable"
+  },
+  {
+    "id": "lap-02",
+    "name": "ASUS ROG Zephyrus G16 OLED",
+    "category": "Laptops",
+    "brand": "ASUS",
+    "price": 2399,
+    "originalPrice": 2699,
+    "discountPercentage": 11,
+    "rating": 4.9,
+    "reviewCount": 182,
+    "inStock": true,
+    "stockCount": 8,
+    "isFeatured": false,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "OLED Gaming",
+    "tagLine": "Ultra-slim CNC aluminum chassis with RTX 4080 and 2.5K 240Hz OLED.",
+    "description": "Crafted from precision CNC-milled aluminum, the ROG Zephyrus G16 marries sleek stealth aesthetics with ferocious gaming power. Houses an Intel Core Ultra 9 processor, NVIDIA GeForce RTX 4080 GPU, Slash Lighting matrix, and G-SYNC calibrated OLED visual brilliance.",
+    "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Eclipse Gray", "hex": "#3d3e42" },
+      { "name": "Platinum White", "hex": "#e5e6e8" }
+    ],
+    "specs": {
+      "Display": "16\" 2.5K (2560x1600) 240Hz 0.2ms OLED ROG Nebula",
+      "Processor": "Intel Core Ultra 9 185H (16 cores, AI NPU)",
+      "Graphics": "NVIDIA GeForce RTX 4080 12GB GDDR6 (115W TGP)",
+      "RAM": "32GB LPDDR5X 7467MHz",
+      "Storage": "2TB PCIe 4.0 NVMe SSD",
+      "Weight": "1.85 kg ultraportable profile"
+    },
+    "features": [
+      "ROG Nebula OLED display with 100% DCI-P3 and VESA DisplayHDR True Black 500",
+      "Slash Lighting lid customization with customizable LED sequences",
+      "ROG Intelligent Cooling with vapor chamber and 2nd Gen Arc Flow Fans",
+      "Quad-speaker audio system with dual force-cancelling woofers"
+    ],
+    "warranty": "2-Year ASUS ROG Global Support",
+    "inBox": "Zephyrus G16, 240W AC Adapter, 100W Type-C Travel Charger"
+  },
+  {
+    "id": "lap-03",
+    "name": "Dell XPS 16 9640",
+    "category": "Laptops",
+    "brand": "Dell",
+    "price": 2199,
+    "originalPrice": 2499,
+    "discountPercentage": 12,
+    "rating": 4.7,
+    "reviewCount": 94,
+    "inStock": true,
+    "stockCount": 11,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": false,
+    "badge": "Minimalist Workstation",
+    "tagLine": "Seamless glass touchpad and edge-to-edge InfinityEdge 4K+ OLED.",
+    "description": "Dell XPS 16 is an architectural work of art in machined aluminum and Gorilla Glass 3. Featuring a seamless glass touch trackpad with haptic feedback, capacitive touch function keys, and RTX 4070 power for creative professionals.",
+    "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Platinum Silver", "hex": "#d6d8db" },
+      { "name": "Graphite", "hex": "#303236" }
+    ],
+    "specs": {
+      "Display": "16.3\" 4K+ (3840x2400) OLED Touch 100% DCI-P3",
+      "Processor": "Intel Core Ultra 7 155H 16-Core",
+      "Graphics": "NVIDIA GeForce RTX 4070 8GB GDDR6",
+      "Memory": "32GB LPDDR5x Dual Channel",
+      "Storage": "1TB M.2 PCIe Gen 4 SSD",
+      "Trackpad": "Seamless Haptic Glass Trackpad"
+    },
+    "features": [
+      "InfinityEdge 4-sided ultra-thin bezel design with 93% screen-to-body ratio",
+      "Capacitive row media keys and zero-lattice mechanical keyboard",
+      "360-degree spatial audio tuned by multi-Grammy Award-winning producer",
+      "Precision CNC sculpted aerospace aluminum shell"
+    ],
+    "warranty": "2-Year Dell ProSupport Onsite Service",
+    "inBox": "Dell XPS 16, 130W USB-C GaN Charger, USB-C to USB-A/HDMI Adapter"
+  },
+  {
+    "id": "lap-04",
+    "name": "Razer Blade 16",
+    "category": "Laptops",
+    "brand": "Razer",
+    "price": 2899,
+    "originalPrice": 3299,
+    "discountPercentage": 12,
+    "rating": 4.8,
+    "reviewCount": 141,
+    "inStock": true,
+    "stockCount": 5,
+    "isFeatured": false,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Dual-Mode Display",
+    "tagLine": "World's first dual-mode Mini-LED display: 4K 120Hz & FHD+ 240Hz.",
+    "description": "Equipped with world's first dual-mode Mini-LED display, switch seamlessly between razor-sharp 4K 120Hz for cinematic design and blistering FHD+ 240Hz for competitive gaming. Anodized CNC aluminum body packed with RTX 4080 power.",
+    "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Matte Black", "hex": "#121214" }
+    ],
+    "specs": {
+      "Display": "16\" Dual-Mode Mini-LED (4K 120Hz / FHD+ 240Hz) 1000 nits",
+      "Processor": "Intel Core i9-14900HX 24-Core 5.8 GHz",
+      "Graphics": "NVIDIA GeForce RTX 4080 12GB (175W Full TGP)",
+      "RAM": "32GB DDR5 5600MHz (Upgradeable)",
+      "Storage": "2TB PCIe 4.0 NVMe M.2",
+      "Cooling": "Patented Full Vapor Chamber"
+    },
+    "features": [
+      "Dual-mode switching between creator precision and esports speed",
+      "Vapor chamber cooling with customized 0.05mm exhaust fins",
+      "Per-key RGB Razer Chroma lighting with anti-ghosting matrix",
+      "Ultra-compact GaN 330W charging brick"
+    ],
+    "warranty": "2-Year Razer Manufacturer Warranty & Battery Coverage",
+    "inBox": "Razer Blade 16, 330W GaN Power Adapter, Microfiber Cleaning Cloth"
+  },
+
+  {
+    "id": "aud-01",
+    "name": "Sony WH-1000XM5 ANC",
+    "category": "Headphones",
+    "brand": "Sony",
+    "price": 349,
+    "originalPrice": 399,
+    "discountPercentage": 13,
+    "rating": 4.9,
+    "reviewCount": 782,
+    "inStock": true,
+    "stockCount": 35,
+    "isFeatured": true,
+    "isNew": false,
+    "isTrending": true,
+    "badge": "Industry Benchmark",
+    "tagLine": "Auto NC Optimizer with two processors and 8 microphones.",
+    "description": "Sony WH-1000XM5 rewrites the rulebook for distraction-free listening. Featuring two processors controlling eight microphones, an Auto NC Optimizer for automatically adapting noise cancellation to your wearing conditions and environment, and a specially designed 30mm driver unit with carbon fiber composite.",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Silver Platinum", "hex": "#dedede" },
+      { "name": "Midnight Black", "hex": "#1a1a1a" },
+      { "name": "Smoky Pink", "hex": "#d4b2b2" }
+    ],
+    "specs": {
+      "Acoustics": "30mm Precision Driver with Carbon Fiber Composite",
+      "Noise Canceling": "Dual V1 + QN1 HD Processors with 8 Microphones",
+      "Battery Life": "Up to 30 hours (ANC ON) / 40 hours (ANC OFF)",
+      "Fast Charge": "3 minutes gives 3 hours playback",
+      "Codec Support": "LDAC, AAC, SBC with DSEE Extreme",
+      "Weight": "250g Ultra-lightweight soft fit leather"
+    },
+    "features": [
+      "Industry-leading Active Noise Cancellation with Auto NC Optimizer",
+      "Crystal clear hands-free calling with 4 beamforming mics and AI reduction",
+      "Speak-to-Chat automatically pauses playback when you start speaking",
+      "Multipoint connection seamlessly swaps between phone and laptop"
+    ],
+    "warranty": "1-Year Sony Official Warranty",
+    "inBox": "WH-1000XM5, Collapsible Carrying Case, 1.2m Audio Cable, USB-C Cable"
+  },
+  {
+    "id": "aud-02",
+    "name": "Apple AirPods Max USB-C",
+    "category": "Headphones",
+    "brand": "Apple",
+    "price": 499,
+    "originalPrice": 549,
+    "discountPercentage": 9,
+    "rating": 4.8,
+    "reviewCount": 512,
+    "inStock": true,
+    "stockCount": 19,
+    "isFeatured": true,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Spatial Audio",
+    "tagLine": "Anodized aluminum ear cups with bespoke dynamic acoustic driver.",
+    "description": "Apple-designed dynamic driver provides high-fidelity audio. Computational audio combines custom acoustic design with the Apple H1 chip and software for breakthrough listening experiences with Personalized Spatial Audio and dynamic head tracking.",
+    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Midnight", "hex": "#1d232a" },
+      { "name": "Starlight", "hex": "#e9e4db" },
+      { "name": "Space Orange", "hex": "#d76538" }
+    ],
+    "specs": {
+      "Driver": "40mm Apple-designed dynamic driver with dual neodymium ring motor",
+      "Chip": "Dual Apple H1 Headphone Chips (10 audio cores each)",
+      "Audio": "Personalized Spatial Audio with dynamic head tracking",
+      "Charging": "USB-C Fast Charging",
+      "Battery": "Up to 20 hours with ANC and Spatial Audio",
+      "Frame": "Stainless steel frame with breathable knit mesh canopy"
+    },
+    "features": [
+      "Personalized Spatial Audio with dynamic head tracking for theater sound",
+      "Pro-level Active Noise Cancellation and Transparency Mode",
+      "Digital Crown for volume control, track skipping, and Siri activation",
+      "Acoustically engineered memory foam ear cushions"
+    ],
+    "warranty": "2-Year AppleCare+ Extended Coverage Available",
+    "inBox": "AirPods Max, Smart Case, USB-C Charge Cable, Documentation"
+  },
+  {
+    "id": "aud-03",
+    "name": "Bose QuietComfort Ultra",
+    "category": "Headphones",
+    "brand": "Bose",
+    "price": 379,
+    "originalPrice": 429,
+    "discountPercentage": 12,
+    "rating": 4.7,
+    "reviewCount": 389,
+    "inStock": true,
+    "stockCount": 26,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": false,
+    "badge": "Immersive Sound",
+    "tagLine": "World-class noise cancellation with Bose Immersive Audio.",
+    "description": "Bose QuietComfort Ultra headphones push the boundaries of what is possible. Bose Immersive Audio spatializes what you hear, taking audio out of your head and placing it right in front of you. CustomTune technology personalizes sound to the unique shape of your ear canal.",
+    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Black", "hex": "#1a1a1a" },
+      { "name": "White Smoke", "hex": "#e8e8e6" }
+    ],
+    "specs": {
+      "Technology": "Bose Immersive Audio Spatializer & CustomTune",
+      "Modes": "Quiet Mode, Aware Mode with ActiveSense, Immersion Mode",
+      "Battery": "Up to 24 hours playback (18 hours with Immersive Audio)",
+      "Bluetooth": "Bluetooth 5.3 with Snapdragon Sound aptX Adaptive",
+      "Weight": "252g"
+    },
+    "features": [
+      "CustomTune technology measures your ears and customizes sound profile",
+      "Snapdragon Sound aptX Adaptive for lossless high-res wireless audio",
+      "Luxurious ear cushions with soft leatherette and aluminum headbands",
+      "Intuitive touch volume strip on right ear cup"
+    ],
+    "warranty": "1-Year Bose Limited Warranty",
+    "inBox": "Bose QC Ultra, Carry Case, 3.5mm to 2.5mm Audio Cable, USB-C Cable"
+  },
+  {
+    "id": "aud-04",
+    "name": "Sennheiser Momentum 4 Wireless",
+    "category": "Headphones",
+    "brand": "Sennheiser",
+    "price": 299,
+    "originalPrice": 379,
+    "discountPercentage": 21,
+    "rating": 4.8,
+    "reviewCount": 420,
+    "inStock": true,
+    "stockCount": 17,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": true,
+    "badge": "60hr Battery King",
+    "tagLine": "Unrivaled 60-hour battery life with audiophile-grade 42mm transducer.",
+    "description": "Enjoy audiophile-grade sound on the move. Sennheiser Momentum 4 delivers extraordinary acoustics inspired by music producers, paired with class-leading 60-hour battery endurance and Adaptive Noise Cancellation.",
+    "image": "https://images.unsplash.com/photo-1545127398-14699f92334b?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1545127398-14699f92334b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Graphite", "hex": "#383a3f" },
+      { "name": "White", "hex": "#f0ede6" }
+    ],
+    "specs": {
+      "Transducer": "42mm Audiophile Transducer System",
+      "Battery Life": "Astounding 60 hours with ANC enabled",
+      "Codecs": "aptX Adaptive, aptX, AAC, SBC",
+      "ANC": "Hybrid Adaptive Noise Cancellation with adjustable Transparency",
+      "Microphones": "4 digital beamforming microphones"
+    },
+    "features": [
+      "Smart Pause halts playback when removed and resumes when replaced",
+      "Built-in 5-band EQ with Sound Personalization test via Smart Control app",
+      "Fold-flat design with lightweight textile headband finish",
+      "Ultra-low latency gaming and video mode"
+    ],
+    "warranty": "2-Year Sennheiser Global Guarantee",
+    "inBox": "Momentum 4, Hard Case, USB-C Cable, 3.5mm Cable, Airplane Adapter"
+  },
+
+  {
+    "id": "tv-01",
+    "name": "LG G4 OLED evo 65\" 4K Smart TV",
+    "category": "Smart TVs",
+    "brand": "LG",
+    "price": 2299,
+    "originalPrice": 2799,
+    "discountPercentage": 18,
+    "rating": 4.9,
+    "reviewCount": 164,
+    "inStock": true,
+    "stockCount": 7,
+    "isFeatured": true,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "OLED Peak",
+    "tagLine": "Brightness Booster Max with alpha 11 AI Processor 4K.",
+    "description": "The masterpiece of modern television. The LG OLED G4 uses Micro Lens Array (MLA) tech with Brightness Booster Max, producing up to 150% more peak luminance than conventional OLEDs. Powered by the Alpha 11 AI processor with 4x AI performance, 144Hz VRR gaming, and zero-gap flush wall mount.",
+    "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Zero-Gap Metallic", "hex": "#232323" }
+    ],
+    "specs": {
+      "Display": "65\" OLED evo 4K (3840x2160) MLA Panel",
+      "Refresh Rate": "144Hz Variable Refresh Rate with G-SYNC & FreeSync",
+      "Processor": "alpha 11 AI Processor 4K (Dual NPU)",
+      "HDR": "Dolby Vision, HDR10, HLG, Filmmaker Mode",
+      "Audio": "60W 4.2 Channel with Dolby Atmos & AI Sound Pro 11.1.2",
+      "Gaming": "4x HDMI 2.1 Full Bandwidth 48Gbps, 0.1ms response"
+    },
+    "features": [
+      "Zero Gap OneWall design mounts completely flush like a picture frame",
+      "5-Year OLED Panel Warranty covered directly by LG",
+      "webOS 24 with 5 years of guaranteed Re:New updates",
+      "NVIDIA G-SYNC certified and AMD FreeSync Premium Pro"
+    ],
+    "warranty": "5-Year LG Official OLED Display Panel Warranty",
+    "inBox": "LG G4 65\", Flush Wall Mount, Magic Remote Control, Power Cord"
+  },
+  {
+    "id": "tv-02",
+    "name": "Samsung 65\" Neo QLED 8K QN900D",
+    "category": "Smart TVs",
+    "brand": "Samsung",
+    "price": 3299,
+    "originalPrice": 3999,
+    "discountPercentage": 18,
+    "rating": 4.8,
+    "reviewCount": 110,
+    "inStock": true,
+    "stockCount": 4,
+    "isFeatured": false,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "8K Infinity",
+    "tagLine": "NQ8 AI Gen3 Processor with borderless Infinity Air Screen.",
+    "description": "Witness the zenith of television resolution. The Samsung QN900D boasts an Infinity Air Design with almost invisible black bezels, Quantum Mini LED backlighting controlled by 512 neural networks, 8K AI Upscaling Pro, and Glare-Free panel coating.",
+    "image": "https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Infinity Metallic", "hex": "#505050" }
+    ],
+    "specs": {
+      "Display": "65\" Neo QLED 8K (7680x4320) Mini-LED",
+      "Refresh Rate": "Native 240Hz Gaming Motion Accelerator",
+      "Processor": "NQ8 AI Gen3 Processor (512 Neural Networks)",
+      "Audio": "90W 6.2.4 Channel with Object Tracking Sound Pro",
+      "Box": "Attachable Slim One Connect Box with single cable",
+      "Brightness": "Peak 3000 nits Quantum HDR 64x"
+    },
+    "features": [
+      "Infinity Air Design creates illusion of screen floating in air",
+      "8K AI Upscaling Pro transforms standard 4K and FHD content to 8K",
+      "AI Motion Enhancer Pro eliminates ball jitter in live sports broadcasts",
+      "SolarCell Remote charges using indoor ambient lighting"
+    ],
+    "warranty": "3-Year Samsung Elite Care Warranty",
+    "inBox": "Samsung 65\" QN900D, One Connect Box, Invisible Cable, SolarCell Remote"
+  },
+  {
+    "id": "tv-03",
+    "name": "Sony BRAVIA XR A95L 65\" QD-OLED",
+    "category": "Smart TVs",
+    "brand": "Sony",
+    "price": 2799,
+    "originalPrice": 3199,
+    "discountPercentage": 13,
+    "rating": 5.0,
+    "reviewCount": 142,
+    "inStock": true,
+    "stockCount": 5,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": true,
+    "badge": "Hollywood Master",
+    "tagLine": "QD-OLED panel powered by Cognitive Processor XR.",
+    "description": "The gold standard for cinema purists. Sony BRAVIA XR A95L unites QD-OLED quantum dot luminance with the Cognitive Processor XR, cross-analyzing hundreds of thousands of visual elements in real-time just like the human brain perceives depth.",
+    "image": "https://images.unsplash.com/photo-1577979749830-f1d742b96791?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1577979749830-f1d742b96791?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Titanium Black", "hex": "#1f1f1f" }
+    ],
+    "specs": {
+      "Display": "65\" QD-OLED (Quantum Dot OLED) 4K 120Hz",
+      "Processor": "Cognitive Processor XR with XR Triluminos Max",
+      "Audio": "Acoustic Surface Audio+ (Screen vibrates as speaker)",
+      "Smart OS": "Google TV with Hands-free Voice Search",
+      "Camera": "Included BRAVIA CAM for gesture control & auto calibration"
+    },
+    "features": [
+      "Acoustic Surface Audio+ turns entire glass screen into a cinema center speaker",
+      "BRAVIA CAM adjusts picture and sound automatically based on your sitting position",
+      "Perfect for PlayStation 5 with Auto HDR Tone Mapping and Auto Genre Picture",
+      "200% wider color volume compared to traditional OLEDs"
+    ],
+    "warranty": "2-Year Sony Master Series Warranty",
+    "inBox": "Sony A95L, Aluminum Premium Remote, BRAVIA CAM, Tabletop Stand"
+  },
+  {
+    "id": "tv-04",
+    "name": "TCL 75\" QM8 Mini-LED 4K TV",
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "price": 1499,
+    "originalPrice": 1899,
+    "discountPercentage": 21,
+    "rating": 4.7,
+    "reviewCount": 219,
+    "inStock": true,
+    "stockCount": 12,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": false,
+    "badge": "Value Beast",
+    "tagLine": "5,000+ local dimming zones with blinding 5,000 nits peak luminance.",
+    "description": "Massive 75-inch Mini-LED powerhouse. The TCL QM8 delivers 5,000 dimming zones and up to 5,000 nits peak brightness, crushing sunlit living rooms with deep ink blacks and vibrant colors.",
+    "image": "https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Dark Brushed Metal", "hex": "#2a2b2d" }
+    ],
+    "specs": {
+      "Display": "75\" QD-Mini LED 4K UHD 144Hz Native",
+      "Dimming": "5,000+ Full Array Local Dimming Zones",
+      "Brightness": "5,000 nits peak brightness",
+      "Audio": "Built-in Onkyo 2.1.2 Channel Dolby Atmos Speaker System",
+      "Gaming": "Game Accelerator 240Hz VRR mode"
+    },
+    "features": [
+      "Anti-Glare screen coating eliminates window and lamp reflections",
+      "AIPQ PRO processor optimizes color, clarity, and contrast frame by frame",
+      "Built-in Onkyo subwoofer delivering deep low-end cinema bass",
+      "AirPlay 2, Chromecast built-in, and Apple HomeKit certified"
+    ],
+    "warranty": "2-Year TCL Care Warranty",
+    "inBox": "TCL 75\" QM8, Remote Control, Heavy Duty Center Stand, Power Cable"
+  },
+
+  {
+    "id": "cam-01",
+    "name": "Sony Alpha 7 IV Full-Frame",
+    "category": "Cameras",
+    "brand": "Sony",
+    "price": 2499,
+    "originalPrice": 2799,
+    "discountPercentage": 11,
+    "rating": 4.9,
+    "reviewCount": 350,
+    "inStock": true,
+    "stockCount": 8,
+    "isFeatured": true,
+    "isNew": false,
+    "isTrending": true,
+    "badge": "Creator Pro",
+    "tagLine": "33MP Exmor R CMOS Sensor & BIONZ XR Processing Engine.",
+    "description": "The quintessential hybrid camera for photographers and cinematographers. Equipped with a 33MP back-illuminated full-frame sensor, Real-time Eye AF for humans, animals and birds, 4K 60p 10-bit 4:2:2 video capture, S-Cinetone color science, and 5-axis in-body optical image stabilization.",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Magnesium Black", "hex": "#1c1c1c" }
+    ],
+    "specs": {
+      "Sensor": "33MP Full-Frame Exmor R CMOS Sensor",
+      "Processor": "BIONZ XR Image Processor (8x processing power)",
+      "Autofocus": "759 Phase-Detection AF Points (94% frame coverage)",
+      "Video": "4K 60p in Super35, 4K 30p full width oversampled from 7K",
+      "Stabilization": "5-axis In-body Optical Stabilization (5.5 stops)",
+      "EVF": "3.68M-dot OLED Electronic Viewfinder (120 fps)"
+    },
+    "features": [
+      "Real-time Eye AF tracking for humans, animals, and birds during 4K video",
+      "S-Cinetone color profile derived from Sony VENICE cinema line",
+      "Side-opening vari-angle LCD touch monitor for high and low angles",
+      "Dual card slots supporting CFexpress Type A and high-speed SD UHS-II"
+    ],
+    "warranty": "2-Year Sony Professional Imaging Warranty",
+    "inBox": "Sony A7 IV Body, FE 28-70mm F3.5-5.6 OSS Lens, NP-FZ100 Battery, Shoulder Strap"
+  },
+  {
+    "id": "cam-02",
+    "name": "Fujifilm X-T5 Mirrorless",
+    "category": "Cameras",
+    "brand": "Fujifilm",
+    "price": 1699,
+    "originalPrice": 1899,
+    "discountPercentage": 11,
+    "rating": 4.8,
+    "reviewCount": 268,
+    "inStock": true,
+    "stockCount": 11,
+    "isFeatured": false,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Retro Masterpiece",
+    "tagLine": "40.2MP X-Trans CMOS 5 HR with classic physical analog dials.",
+    "description": "Fujifilm X-T5 brings pure photography back to your fingertips. Classic analog dials for shutter speed, ISO, and exposure compensation grace a compact, weather-sealed magnesium body. Powered by 40.2MP X-Trans 5 HR sensor and 19 iconic Film Simulation modes.",
+    "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Silver Classic", "hex": "#bcbdc0" },
+      { "name": "Black", "hex": "#202020" }
+    ],
+    "specs": {
+      "Sensor": "40.2MP APS-C X-Trans CMOS 5 HR Sensor",
+      "Processor": "X-Processor 5 with Deep-Learning AI autofocus",
+      "Stabilization": "5-axis In-body Image Stabilization up to 7.0 stops",
+      "Video": "6.2K 30p 4:2:2 10-bit internal recording",
+      "Shutter": "Ultra-fast electronic shutter up to 1/180,000 sec"
+    },
+    "features": [
+      "19 legendary Film Simulation modes including Nostalgic Neg and Classic Chrome",
+      "160MP Pixel Shift Multi-Shot mode for hyper-detailed landscapes",
+      "Three-way tilting LCD screen for intuitive waist-level street shooting",
+      "Dual SD UHS-II card slots in a body 50g lighter than predecessor"
+    ],
+    "warranty": "2-Year Fujifilm Official Warranty",
+    "inBox": "Fujifilm X-T5 Body, NP-W235 Li-ion Battery, AC Power Adapter, Shoulder Strap"
+  },
+  {
+    "id": "cam-03",
+    "name": "Canon EOS R6 Mark II",
+    "category": "Cameras",
+    "brand": "Canon",
+    "price": 2299,
+    "originalPrice": 2499,
+    "discountPercentage": 8,
+    "rating": 4.8,
+    "reviewCount": 178,
+    "inStock": true,
+    "stockCount": 9,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": false,
+    "badge": "40 FPS Burst",
+    "tagLine": "24.2MP full-frame CMOS with 40 fps electronic burst shooting.",
+    "description": "Never miss a fraction of a second. Canon EOS R6 Mark II delivers breathtaking 40 fps silent continuous shooting with full AF/AE tracking, 6K oversampled 4K 60p video without crop, and Dual Pixel CMOS AF II driven by deep learning.",
+    "image": "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Matte Canon Black", "hex": "#1d1d1f" }
+    ],
+    "specs": {
+      "Sensor": "24.2MP Full-Frame CMOS Sensor",
+      "Speed": "Up to 40 fps electronic / 12 fps mechanical shutter",
+      "Autofocus": "Dual Pixel CMOS AF II with vehicle, animal & subject detection",
+      "Stabilization": "Up to 8.0 stops coordinated IBIS with RF lenses",
+      "Video": "Uncropped 4K 60p 10-bit 4:2:2 with Canon Log 3"
+    },
+    "features": [
+      "Deep Learning subject tracking recognizes horses, aircraft, trains and motorsport",
+      "Pre-recording RAW burst captures 0.5s of action before full shutter press",
+      "Multi-function hot shoe with digital audio interface support",
+      "Over 6 hours continuous 4K video recording with thermal management"
+    ],
+    "warranty": "2-Year Canon USA / Global Warranty",
+    "inBox": "Canon EOS R6 Mark II Body, LP-E6NH Battery Pack, Battery Charger, Strap"
+  },
+  {
+    "id": "cam-04",
+    "name": "Nikon Z8 8K Full-Frame",
+    "category": "Cameras",
+    "brand": "Nikon",
+    "price": 3699,
+    "originalPrice": 3999,
+    "discountPercentage": 8,
+    "rating": 4.9,
+    "reviewCount": 115,
+    "inStock": true,
+    "stockCount": 4,
+    "isFeatured": false,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Baby Z9",
+    "tagLine": "45.7MP stacked sensor with internal 8.3K 60p N-RAW recording.",
+    "description": "Packed with the exact speed and processing power of the flagship Z9 into a 30% smaller chassis. The Nikon Z8 features a stacked full-frame CMOS sensor with zero mechanical shutter, 8.3K 60p 12-bit RAW video, and blackout-free Real-Live Viewfinder.",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Stealth Magnesium", "hex": "#252629" }
+    ],
+    "specs": {
+      "Sensor": "45.7MP FX-Format Stacked CMOS Sensor (No Mechanical Shutter)",
+      "Processor": "EXPEED 7 Image Processing Engine",
+      "Video": "8.3K 60p N-RAW, 4.1K 120p, ProRes RAW HQ internal",
+      "Burst": "20 fps RAW, up to 120 fps 11MP JPEGs",
+      "Viewfinder": "3.69M-dot Quad-VGA Real-Live OLED (No Blackout)"
+    },
+    "features": [
+      "Completely electronic shutter with world-leading minimal rolling shutter distortion",
+      "Dual USB-C ports: one dedicated for fast charging, one for data communication",
+      "ProGrade CFexpress Type B and SD UHS-II dual slots",
+      "Full weather-sealing matching professional Nikon D850 standards"
+    ],
+    "warranty": "2-Year Nikon Pro Guarantee",
+    "inBox": "Nikon Z8 Body, EN-EL15c Battery, MH-25a Charger, HDMI/USB Cable Clip"
+  },
+
+  {
+    "id": "wat-01",
+    "name": "Apple Watch Ultra 2",
+    "category": "Smartwatches",
+    "brand": "Apple",
+    "price": 799,
+    "originalPrice": 849,
+    "discountPercentage": 6,
+    "rating": 4.9,
+    "reviewCount": 612,
+    "inStock": true,
+    "stockCount": 21,
+    "isFeatured": true,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Titanium Extreme",
+    "tagLine": "49mm Titanium case with 3,000 nits display and S9 SiP Double Tap.",
+    "description": "The most rugged and capable Apple Watch ever. Crafted from lightweight aerospace titanium, featuring a flat sapphire front crystal, 3,000 nits maximum brightness, precision dual-frequency GPS, up to 72 hours of battery in Low Power Mode, and the revolutionary Double Tap gesture.",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Natural Titanium", "hex": "#a3a19b" },
+      { "name": "Black Titanium", "hex": "#27282b" }
+    ],
+    "specs": {
+      "Case": "49mm Grade 5 Titanium with raised bezel edge",
+      "Display": "Always-On Retina OLED 3000 nits peak brightness",
+      "Processor": "S9 SiP 64-bit dual-core with 4-core Neural Engine",
+      "Water Resistance": "100m water resistant & EN13319 dive computer certified (40m)",
+      "Battery": "Up to 36 hours regular / 72 hours Low Power Mode",
+      "Connectivity": "Precision Dual-frequency GPS (L1 and L5) + LTE Cellular"
+    },
+    "features": [
+      "Double Tap gesture allows answering calls and pausing timers with one hand",
+      "Oceanic+ app transforms watch into a recreational dive computer",
+      "86-decibel emergency siren audible up to 180 meters away",
+      "Customizable physical Action button for instant workout marks"
+    ],
+    "warranty": "2-Year AppleCare+ Warranty",
+    "inBox": "Apple Watch Ultra 2, Ocean Band or Trail Loop, Magnetic Fast Charger USB-C Cable"
+  },
+  {
+    "id": "wat-02",
+    "name": "Samsung Galaxy Watch Ultra",
+    "category": "Smartwatches",
+    "brand": "Samsung",
+    "price": 649,
+    "originalPrice": 699,
+    "discountPercentage": 7,
+    "rating": 4.8,
+    "reviewCount": 245,
+    "inStock": true,
+    "stockCount": 16,
+    "isFeatured": false,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Cushion Titanium",
+    "tagLine": "Rugged cushion design with 3nm processor & 100hr endurance.",
+    "description": "Built to push boundaries. The Galaxy Watch Ultra boasts a Grade 4 titanium cushion frame, sapphire crystal glass, 3nm Exynos W1000 5-core processor, dual-frequency GPS, and Galaxy AI wellness metrics like Energy Score and FTP cycling analytics.",
+    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Titanium Gray", "hex": "#4b4c4f" },
+      { "name": "Titanium White", "hex": "#f1f1f1" },
+      { "name": "Titanium Silver", "hex": "#c1c3c7" }
+    ],
+    "specs": {
+      "Case": "47mm Grade 4 Titanium Cushion Shape",
+      "Display": "1.5\" Super AMOLED 3000 nits Sapphire Crystal",
+      "Processor": "Exynos W1000 (3nm, 5 Cores)",
+      "Battery": "590 mAh (up to 100 hours in Power Saving mode)",
+      "Sensors": "BioActive Sensor (Optical Heart + ECG + BIA Body Composition)",
+      "Durability": "10ATM + IP68 + MIL-STD-810H"
+    },
+    "features": [
+      "Galaxy AI Energy Score analyzes sleep, heart rate, and previous day steps",
+      "Quick Button for instant multi-sport triathlon workout transitions",
+      "Built-in 86dB safety siren and emergency SOS with fall detection",
+      "Marine band with titanium buckle designed for water sports"
+    ],
+    "warranty": "2-Year Samsung Care Support",
+    "inBox": "Galaxy Watch Ultra, Marine Band, Wireless Fast Charging Puck"
+  },
+  {
+    "id": "wat-03",
+    "name": "Garmin Epix Pro Gen 2",
+    "category": "Smartwatches",
+    "brand": "Garmin",
+    "price": 899,
+    "originalPrice": 999,
+    "discountPercentage": 10,
+    "rating": 4.9,
+    "reviewCount": 189,
+    "inStock": true,
+    "stockCount": 8,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": false,
+    "badge": "Expedition Elite",
+    "tagLine": "Brilliant AMOLED display with built-in LED flashlight and 31-day battery.",
+    "description": "For high-performance athletes who accept no compromise. Garmin Epix Pro (Gen 2) Sapphire Edition matches a crystalline AMOLED touch screen with a titanium bezel, multi-LED integrated flashlight, Hill Score, Endurance Score, and worldwide TopoActive topographical maps.",
+    "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Carbon Gray DLC Titanium", "hex": "#37383a" }
+    ],
+    "specs": {
+      "Size": "51mm Sapphire Crystal Lens with Titanium Bezel",
+      "Display": "1.4\" AMOLED 454x454 Always-on Touch Screen",
+      "Battery Life": "Up to 31 days in smartwatch mode / 82 hours in GPS mode",
+      "Flashlight": "Variable intensity multi-LED white and red safety strobe",
+      "Mapping": "Preloaded TopoActive maps, Golf course maps, SkiView maps"
+    },
+    "features": [
+      "Integrated multi-LED flashlight with cadence-matching running strobe",
+      "Gen 5 Elevate heart rate sensor with ECG and SpO2 blood oxygen",
+      "SatIQ multi-band GNSS technology optimizes GPS accuracy and battery",
+      "Morning Report delivers personalized recovery and workout recommendations"
+    ],
+    "warranty": "2-Year Garmin Factory Warranty",
+    "inBox": "Garmin Epix Pro 51mm, USB-C Charging/Data Cable, Documentation"
+  },
+  {
+    "id": "wat-04",
+    "name": "Google Pixel Watch 3 45mm",
+    "category": "Smartwatches",
+    "brand": "Google",
+    "price": 399,
+    "originalPrice": 449,
+    "discountPercentage": 11,
+    "rating": 4.7,
+    "reviewCount": 210,
+    "inStock": true,
+    "stockCount": 25,
+    "isFeatured": false,
+    "isNew": true,
+    "isTrending": false,
+    "badge": "Fitbit Deep AI",
+    "tagLine": "Actua AMOLED 2000 nits with custom running form and Cardio Load.",
+    "description": "Bigger, brighter, and smarter. Pixel Watch 3 delivers a 45mm display with 40% more screen area, 2,000 nits peak Actua display, advanced Fitbit running mechanics, and seamless control for Google Nest, Pixel cameras, and Google Maps.",
+    "image": "https://images.unsplash.com/photo-1510017803434-a899398421b3?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1510017803434-a899398421b3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Matte Black", "hex": "#1a1a1c" },
+      { "name": "Polished Silver", "hex": "#dcdde0" }
+    ],
+    "specs": {
+      "Case": "45mm Custom 100% Recycled Aerospace Aluminum",
+      "Display": "Actua 3D Corning Gorilla Glass 5 AMOLED (1-2000 nits)",
+      "Battery": "306 mAh with 24 hours Always-On / 36 hours Battery Saver",
+      "OS": "Wear OS 5.0 with deep Google Services integration",
+      "Sensors": "cEDA continuous electrodermal skin sensor, ECG, SpO2"
+    },
+    "features": [
+      "Loss of Pulse Detection automatically dials emergency services if heart stops",
+      "Target Cardio Load and Readiness Score powered by Fitbit AI",
+      "Live camera viewfinder control for Pixel 9 smartphones",
+      "Ultra-wideband (UWB) chip for Digital Car Key and watch unlock"
+    ],
+    "warranty": "1-Year Google Store Warranty",
+    "inBox": "Pixel Watch 3 45mm, Active Band (S and L sizes), USB-C Fast Charging Cable"
+  },
+
+  {
+    "id": "acc-01",
+    "name": "Anker Prime 250W GaN Station",
+    "category": "Accessories",
+    "brand": "Anker",
+    "price": 169,
+    "originalPrice": 199,
+    "discountPercentage": 15,
+    "rating": 4.9,
+    "reviewCount": 420,
+    "inStock": true,
+    "stockCount": 38,
+    "isFeatured": true,
+    "isNew": true,
+    "isTrending": true,
+    "badge": "Power Lab",
+    "tagLine": "6-Port GaN charging hub with 2.26\" Smart Digital Display & Dial Control.",
+    "description": "Charge all your flagship laptops, tablets, and phones simultaneously at peak velocity. The Anker Prime 250W GaN Charging Station features four USB-C and two USB-A ports, delivering up to 140W on a single port to power a 16\" MacBook Pro to 50% in 28 minutes. Integrated smart screen monitors real-time voltage and watts.",
+    "image": "https://images.unsplash.com/photo-1622445262464-84b1456045b6?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1622445262464-84b1456045b6?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Dark Space Gray", "hex": "#28292d" }
+    ],
+    "specs": {
+      "Total Output": "250W Simultaneous Power Delivery",
+      "Single Port Peak": "140W USB-C Power Delivery 3.1",
+      "Ports": "4x USB-C + 2x USB-A",
+      "Display": "2.26\" Smart LCD with real-time port telemetry & clock",
+      "Safety": "ActiveShield 3.0 monitors temperature 6,000,000 times per day"
+    },
+    "features": [
+      "Smart Control Dial adjusts charging profiles and time display",
+      "Simultaneously fast charges two MacBook Pros and two iPhones at full speed",
+      "GaNPrime semiconductor efficiency reduces heat output by 40%",
+      "Anker app connectivity via Wi-Fi and Bluetooth"
+    ],
+    "warranty": "24-Month Anker Worry-Free Replacement Warranty",
+    "inBox": "Anker Prime 250W Charging Station, 5ft AC Power Cord, Manual"
+  },
+  {
+    "id": "acc-02",
+    "name": "Apple Magic Keyboard Touch ID",
+    "category": "Accessories",
+    "brand": "Apple",
+    "price": 199,
+    "originalPrice": 219,
+    "discountPercentage": 9,
+    "rating": 4.8,
+    "reviewCount": 310,
+    "inStock": true,
+    "stockCount": 24,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": false,
+    "badge": "Desk Classic",
+    "tagLine": "Wireless keyboard with Touch ID biometric security & Numeric Keypad.",
+    "description": "Magic Keyboard with Touch ID and Numeric Keypad delivers a remarkably comfortable and precise typing experience. It features an extended layout, with document navigation controls for quick scrolling and full-size arrow keys for gaming.",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Black & Silver", "hex": "#232323" },
+      { "name": "White & Silver", "hex": "#f5f5f7" }
+    ],
+    "specs": {
+      "Security": "Built-in Touch ID biometric sensor",
+      "Layout": "Full layout with Numeric Keypad and full-height arrows",
+      "Battery": "Rechargeable internal battery (over 1 month per charge)",
+      "Port": "USB-C to braided cable included",
+      "Connection": "Bluetooth with instant Mac pairing"
+    },
+    "features": [
+      "Touch ID enables instant secure login and Apple Pay purchases",
+      "Low profile scissor keys engineered for silent tactile feedback",
+      "Woven USB-C to Lightning / USB-C braided high-durability cable",
+      "Ultra-thin anodized aluminum unibody frame"
+    ],
+    "warranty": "1-Year Apple Manufacturer Warranty",
+    "inBox": "Magic Keyboard with Touch ID, Braided USB-C Charge Cable"
+  },
+  {
+    "id": "acc-03",
+    "name": "DJI Osmo Mobile 6 Gimbal",
+    "category": "Accessories",
+    "brand": "DJI",
+    "price": 149,
+    "originalPrice": 169,
+    "discountPercentage": 12,
+    "rating": 4.8,
+    "reviewCount": 275,
+    "inStock": true,
+    "stockCount": 30,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": true,
+    "badge": "Mobile Cinema",
+    "tagLine": "3-Axis Smartphone Gimbal with ActiveTrack 6.0 and Built-in Extension Rod.",
+    "description": "Unfold cinematic storytelling on your phone. DJI Osmo Mobile 6 features a compact foldable design, quick launch magnetic clamp, built-in 215mm extension rod for dynamic angles, and ActiveTrack 6.0 that keeps subjects locked dead center even during erratic motion.",
+    "image": "https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Slate Gray", "hex": "#404347" }
+    ],
+    "specs": {
+      "Stabilization": "3-Axis Precision Brushless Motors",
+      "Extension": "Built-in 215mm telescopic extension rod",
+      "Tracking": "ActiveTrack 6.0 deep learning subject lock",
+      "Mount": "Ultra-fast Magnetic Phone Clamp",
+      "Battery": "Up to 6.5 hours continuous filming"
+    },
+    "features": [
+      "Quick Launch pops camera notification on iPhone immediately upon snapping",
+      "Side wheel controls manual focus and cinematic smooth zoom transitions",
+      "ShotGuides automatically recognizes environment and teaches shooting recipes",
+      "Folds into pocketable size weighing only 309g"
+    ],
+    "warranty": "1-Year DJI Care Refresh Available",
+    "inBox": "DJI OM 6, DJI OM Magnetic Phone Clamp 3, Grip Tripod, Power Cable, Storage Pouch"
+  },
+  {
+    "id": "acc-04",
+    "name": "Logitech MX Master 3S",
+    "category": "Accessories",
+    "brand": "Logitech",
+    "price": 99,
+    "originalPrice": 119,
+    "discountPercentage": 17,
+    "rating": 4.9,
+    "reviewCount": 940,
+    "inStock": true,
+    "stockCount": 55,
+    "isFeatured": false,
+    "isNew": false,
+    "isTrending": true,
+    "badge": "Ergonomic King",
+    "tagLine": "8K DPI any-surface track sensor with Quiet Clicks and MagSpeed scroll.",
+    "description": "An icon remastered. Logitech MX Master 3S introduces 8,000 DPI Darkfield tracking that works on glass, 90% quieter clicks, and the electromagnetic MagSpeed scroll wheel that spins 1,000 lines in a second with pixel-perfect tactile precision.",
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=1000&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "colors": [
+      { "name": "Space Gray", "hex": "#2c2d30" },
+      { "name": "Pale Gray", "hex": "#e1e2e4" }
+    ],
+    "specs": {
+      "Sensor": "Darkfield 8,000 DPI Precision Optical (tracks on glass)",
+      "Wheel": "Electromagnetic MagSpeed Wheel with SmartShift",
+      "Clicks": "Quiet Click technology (90% noise reduction)",
+      "Battery": "500 mAh Li-Po (up to 70 days; 1 min charge gives 3 hours)",
+      "Connectivity": "Logi Bolt USB Receiver + Bluetooth Low Energy (3 devices)"
+    },
+    "features": [
+      "MagSpeed scroll wheel shifts from ratchet to hyper-fast free spin silently",
+      "Thumb wheel and gesture button customized per application (Photoshop, Excel, Figma)",
+      "Logitech Flow cross-computer control: copy paste text and files across 3 PCs/Macs",
+      "Ergonomic palm silhouette crafted to support wrist angle naturally"
+    ],
+    "warranty": "2-Year Logitech Hardware Guarantee",
+    "inBox": "MX Master 3S Mouse, Logi Bolt USB Receiver, USB-C Charging Cable (USB-A to USB-C)"
+  }
+]
